@@ -16,13 +16,22 @@
                     <view key="view" contentMode="scaleToFill" id="vXh-AP-YLc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AWj-Om-jDz">
+                                <rect key="frame" x="67" y="209" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="v5y-Yy-6hg"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="AWj-Om-jDz" id="1ii-nF-4aH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0n7-EH-4HM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="184"/>
+            <point key="canvasLocation" x="1061.5999999999999" y="183.95802098950526"/>
         </scene>
         <!--Intergalactic Travel, Inc.-->
         <scene sceneID="tne-QT-ifu">
@@ -31,14 +40,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars" translatesAutoresizingMaskIntoConstraints="NO" id="aYx-gl-SED">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixz-Dq-60Z">
+                                <rect key="frame" x="112" y="276" width="150" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FfJ-ho-EI4"/>
+                                    <constraint firstAttribute="width" constant="150" id="Iqe-BI-6oS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Red Dwarf">
+                                    <color key="titleColor" red="0.88552461140000005" green="0.092441251540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3gr-Rs-bBH" kind="show" id="ou1-ja-9ZP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aYx-gl-SED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Fn-Z5-nGr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aYx-gl-SED" secondAttribute="trailing" id="fUZ-Gz-6Rm"/>
+                            <constraint firstItem="aYx-gl-SED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mx8-fg-dFh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aYx-gl-SED" secondAttribute="bottom" id="yYw-di-gzC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Intergalactic Travel, Inc." id="ZlP-LP-qTQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="-564"/>
+            <point key="canvasLocation" x="188" y="184"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KBd-5m-Wp1">
@@ -59,4 +94,7 @@
             <point key="canvasLocation" x="188" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Stars" width="960" height="655"/>
+    </resources>
 </document>
