@@ -9,6 +9,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Star View Controller-->
+        <scene sceneID="lzJ-MH-lIc">
+            <objects>
+                <viewController id="3gr-Rs-bBH" customClass="StarViewController" customModule="IntergalacticTravel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vXh-AP-YLc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v5y-Yy-6hg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0n7-EH-4HM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="184"/>
+        </scene>
         <!--Intergalactic Travel, Inc.-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -23,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="-564"/>
+            <point key="canvasLocation" x="1062" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KBd-5m-Wp1">
